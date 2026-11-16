@@ -1,35 +1,119 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiến Dũng 12A4</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1b1840">
+  <meta name="description" content="Trang giới thiệu bản thân của Phạm Tiến Dũng - học sinh lớp 12A4 Trường THPT Hòn Gai.">
+  <title>Tiến Dũng 12A4</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1">
 </head>
 <body>
-    <h1 align="center"><font color="crimson" face="Verdana">GIỚI THIỆU VỀ BẢN THÂN</font></h1>
-    <h2 align="center"><font color="" face="Tahoma">Trang web này chứa các thông tin thú vị về mình, hãy cùng nhau khám phá nhé!</font></h2>
-    <h2><font color="Teal" face="Tahoma">I. Một số thông tin cơ bản</font><img width="300" align="right" src="dung.jpg"></h2>
-    <p><font size="4" color="" face="Tahoma">- Mình tên là Phạm Tiến Dũng, 17 tuổi. Hiện tại mình đang là học sinh lớp 12A4 của Trường THPT Hòn Gai. </font> </p>
-    <p><font size="4" color="" face="Tahoma">- Mình sinh ngày 17/08/2009, lớn lên tại Vùng Đất Mỏ Quảng Ninh.</font></p>
-    <h2><font color="Royal Blue" face="Tahoma">II. Sở thích của mình</font></h2>
-    <ul style="list-style-type: disc;">
-        <li><font size="4" color="" face="Tahoma">Đá bóng sau các giờ học</font></li>
-        <li><font size="4" color="" face="Tahoma">Chơi game cùng bạn bè</font></li>
-    </ul>
-    <h2><font color="Brown" face="Tahoma">III. Các trường đại học mơ ước</font></h2>
-    <ol type="1">
-        <li><font size="4" color="" face="Tahoma">Trường Đại học Bách Khoa Hà Nội (HUST)</font></li>
-        <li><font size="4" color="" face="Tahoma">Trường Đại học Luật Hà Nội (HLU)</font></li>
-    </ol>
-    <p><font size="4" color="" face="Tahoma">- Dưới đây là một video ngắn giới thiệu về Trường Đại học Luật Hà Nội trên nền tảng youtube</font></p>
-    <video width="600" controls>
-            <source src="dung.mp4"
-                    type="video/mp4">
-    </video>
-    <h2><font color="#191970"face="Tahoma">IV.Kết nối với mình</font></h2>
-    <p><img width="100" src="zalo.jpg" width="150"><font size="5" color="#006400" face="Tahoma">: 0388138102</font></p>
-    <a href="https://www.facebook.com/profile.php?id=61576741956837" target="_blank">
-    <img width="100" src="fb.png" width="150">
-</a>
+
+  <header class="menubar">
+    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+    <h1>Giới thiệu về bản thân</h1>
+    <span class="menubar-end" aria-hidden="true">12A4</span>
+  </header>
+
+  <main class="desk">
+
+    <!-- Cột trái: ảnh -->
+    <section class="win t-photo">
+      <div class="win-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win-title">dung.jpg</span></div>
+      <div class="photo-box"><img src="dung.jpg" alt="Ảnh Phạm Tiến Dũng"></div>
+    </section>
+
+    <!-- Cột phải: cụm 4 cửa sổ -->
+    <div class="cluster">
+
+      <header class="win t-intro reveal">
+        <div class="win-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win-title">terminal</span></div>
+        <div class="term">
+          <p class="cmd"><span class="prompt">$</span> xin_chao --minh_la</p>
+          <p class="name"><span>Phạm Tiến Dũng</span></p>
+          <p class="cmd"><span class="prompt">$</span> cat loi_chao.txt</p>
+          <p class="bio"><span>Trang web này chứa các thông tin thú vị về mình,</span> <span>hãy cùng nhau khám phá nhé!</span></p>
+          <p class="cmd"><span class="prompt">$</span> ls muc_luc/</p>
+          <nav class="menu" aria-label="Các phần của trang">
+            <a href="#thong-tin">thong_tin/</a>
+            <a href="#so-thich">so_thich/</a>
+            <a href="#dai-hoc">dai_hoc/</a>
+            <a href="#ket-noi">ket_noi/</a>
+          </nav>
+          <p class="cmd"><span class="prompt">$</span><span class="cursor" aria-hidden="true"></span></p>
+        </div>
+      </header>
+
+      <section class="win t-info reveal" id="thong-tin">
+        <div class="win-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win-title">I. Một số thông tin cơ bản</span></div>
+        <dl class="specs">
+          <div><dt>Họ và tên</dt><dd>Phạm Tiến Dũng</dd></div>
+          <div><dt>Tuổi</dt><dd>17 tuổi</dd></div>
+          <div><dt>Đang học</dt><dd>Lớp 12A4 · Trường THPT Hòn Gai</dd></div>
+          <div><dt>Ngày sinh</dt><dd>17/08/2009</dd></div>
+          <div class="wide"><dt>Lớn lên tại</dt><dd>Vùng Đất Mỏ Quảng Ninh</dd></div>
+        </dl>
+      </section>
+
+      <section class="win t-hob reveal" id="so-thich">
+        <div class="win-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win-title">II. Sở thích của mình</span></div>
+        <ul class="hobbies">
+          <li><span aria-hidden="true">⚽</span>Đá bóng sau các giờ học</li>
+          <li><span aria-hidden="true">🎮</span>Chơi game cùng bạn bè</li>
+        </ul>
+      </section>
+
+      <section class="win t-uni reveal" id="dai-hoc">
+        <div class="win-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win-title">III. Các trường đại học mơ ước</span></div>
+        <ol class="unis">
+          <li><b class="num">1</b><span class="uname">Trường Đại học Bách Khoa Hà Nội</span><span class="code">HUST</span></li>
+          <li><b class="num">2</b><span class="uname">Trường Đại học Luật Hà Nội</span><span class="code">HLU</span></li>
+        </ol>
+      </section>
+
+    </div>
+
+    <!-- Hàng dưới: video | kết nối -->
+    <section class="win t-video reveal" id="video">
+      <div class="win-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win-title">dung.mp4</span></div>
+      <div class="video-body">
+        <p class="video-cap">Dưới đây là một video ngắn giới thiệu về Trường Đại học Luật Hà Nội trên nền tảng youtube</p>
+        <video controls preload="metadata" src="dung.mp4">Trình duyệt của bạn không hỗ trợ video. <a href="dung.mp4">Mở video</a></video>
+      </div>
+    </section>
+
+    <section class="win t-contact reveal" id="ket-noi">
+      <div class="win-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win-title">IV. Kết nối với mình</span></div>
+      <div class="links">
+        <a class="link" href="https://zalo.me/0388138102" target="_blank" rel="noopener">
+          <img src="zalo.jpg" alt="Zalo"><span><b>Zalo</b><small>0388138102</small></span>
+        </a>
+        <a class="link" href="https://www.facebook.com/profile.php?id=61576741956837" target="_blank" rel="noopener">
+          <img src="fb.png" alt="Facebook"><span><b>Facebook</b><small>Phạm Tiến Dũng</small></span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>© 2026 Phạm Tiến Dũng · Cảm ơn bạn đã ghé thăm!</footer>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(function (e) { io.observe(e); });
+    })();
+  </script>
 </body>
 </html>
